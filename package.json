@@ -1,0 +1,16 @@
+{
+  "name": "sgb-screen-group-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/sgb-screen-group-list.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Garcia <juan.garcia@synergy-gb.com>",
+  "license": "Propietary",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "vinyl-transform": "^1.0.0"
+  }
+}

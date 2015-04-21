@@ -1,0 +1,282 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'gulp',
+1 verbose cli   'browserfy@9.0.3',
+1 verbose cli   'vinyl-transform' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 warn package.json sgb-screen-group-list@1.0.0 No description
+5 warn package.json sgb-screen-group-list@1.0.0 No repository field.
+6 warn package.json sgb-screen-group-list@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'gulp', null ]
+9 verbose cache add name=undefined spec="gulp" args=["gulp",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'gulp',
+10 verbose parsed url   path: 'gulp',
+10 verbose parsed url   href: 'gulp' }
+11 verbose cache add [ 'browserfy@9.0.3', null ]
+12 verbose cache add name=undefined spec="browserfy@9.0.3" args=["browserfy@9.0.3",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'browserfy@9.0.3',
+13 verbose parsed url   path: 'browserfy@9.0.3',
+13 verbose parsed url   href: 'browserfy@9.0.3' }
+14 verbose cache add [ 'vinyl-transform', null ]
+15 verbose cache add name=undefined spec="vinyl-transform" args=["vinyl-transform",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'vinyl-transform',
+16 verbose parsed url   path: 'vinyl-transform',
+16 verbose parsed url   href: 'vinyl-transform' }
+17 verbose cache add name="browserfy" spec="9.0.3" args=["browserfy","9.0.3"]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: '9.0.3',
+18 verbose parsed url   path: '9.0.3',
+18 verbose parsed url   href: '9.0.3' }
+19 verbose addNamed [ 'browserfy', '9.0.3' ]
+20 verbose addNamed [ '9.0.3', '9.0.3' ]
+21 silly lockFile 9750c68d-gulp gulp
+22 verbose lock gulp /Users/sgbpty-002/.npm/9750c68d-gulp.lock
+23 silly lockFile 1ba753d1-browserfy-9-0-3 browserfy@9.0.3
+24 verbose lock browserfy@9.0.3 /Users/sgbpty-002/.npm/1ba753d1-browserfy-9-0-3.lock
+25 silly lockFile 96f0e4fb-vinyl-transform vinyl-transform
+26 verbose lock vinyl-transform /Users/sgbpty-002/.npm/96f0e4fb-vinyl-transform.lock
+27 silly lockFile 9750c68d-gulp gulp
+28 silly lockFile 9750c68d-gulp gulp
+29 silly lockFile 96f0e4fb-vinyl-transform vinyl-transform
+30 silly lockFile 96f0e4fb-vinyl-transform vinyl-transform
+31 verbose request where is /browserfy
+32 verbose request registry https://registry.npmjs.org/
+33 verbose request id bb2eaaaa76d4c8f3
+34 verbose url raw /browserfy
+35 verbose url resolving [ 'https://registry.npmjs.org/', './browserfy' ]
+36 verbose url resolved https://registry.npmjs.org/browserfy
+37 verbose request where is https://registry.npmjs.org/browserfy
+38 info trying registry request attempt 1 at 13:50:17
+39 http GET https://registry.npmjs.org/browserfy
+40 verbose addNamed [ 'vinyl-transform', '' ]
+41 verbose addNamed [ null, '*' ]
+42 silly lockFile 654757e8-vinyl-transform vinyl-transform@
+43 verbose lock vinyl-transform@ /Users/sgbpty-002/.npm/654757e8-vinyl-transform.lock
+44 verbose addNamed [ 'gulp', '' ]
+45 verbose addNamed [ null, '*' ]
+46 silly lockFile 72f4391e-gulp gulp@
+47 verbose lock gulp@ /Users/sgbpty-002/.npm/72f4391e-gulp.lock
+48 silly addNameRange { name: 'vinyl-transform', range: '*', hasData: false }
+49 silly addNameRange { name: 'gulp', range: '*', hasData: false }
+50 verbose request where is /vinyl-transform
+51 verbose request registry https://registry.npmjs.org/
+52 verbose url raw /vinyl-transform
+53 verbose url resolving [ 'https://registry.npmjs.org/', './vinyl-transform' ]
+54 verbose url resolved https://registry.npmjs.org/vinyl-transform
+55 verbose request where is https://registry.npmjs.org/vinyl-transform
+56 info trying registry request attempt 1 at 13:50:17
+57 verbose etag "CPWHPAP0NHLIACSU0SOZ7F7DY"
+58 http GET https://registry.npmjs.org/vinyl-transform
+59 verbose request where is /gulp
+60 verbose request registry https://registry.npmjs.org/
+61 verbose url raw /gulp
+62 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+63 verbose url resolved https://registry.npmjs.org/gulp
+64 verbose request where is https://registry.npmjs.org/gulp
+65 info trying registry request attempt 1 at 13:50:17
+66 verbose etag "CQUGLBGXH719XRWJ59G84PLDE"
+67 http GET https://registry.npmjs.org/gulp
+68 http 304 https://registry.npmjs.org/vinyl-transform
+69 silly registry.get cb [ 304,
+69 silly registry.get   { date: 'Tue, 21 Apr 2015 18:50:21 GMT',
+69 silly registry.get     server: 'Apache',
+69 silly registry.get     via: '1.1 varnish',
+69 silly registry.get     'last-modified': 'Tue, 21 Apr 2015 18:50:21 GMT',
+69 silly registry.get     'cache-control': 'max-age=60',
+69 silly registry.get     etag: '"CPWHPAP0NHLIACSU0SOZ7F7DY"',
+69 silly registry.get     age: '10',
+69 silly registry.get     'x-served-by': 'cache-iad2140-IAD',
+69 silly registry.get     'x-cache': 'HIT',
+69 silly registry.get     'x-cache-hits': '1',
+69 silly registry.get     'x-timer': 'S1429642221.011817,VS0,VE0',
+69 silly registry.get     vary: 'Accept',
+69 silly registry.get     'content-length': '0',
+69 silly registry.get     'keep-alive': 'timeout=10, max=50',
+69 silly registry.get     connection: 'Keep-Alive' } ]
+70 verbose etag https://registry.npmjs.org/vinyl-transform from cache
+71 http 404 https://registry.npmjs.org/browserfy
+72 verbose headers { date: 'Tue, 21 Apr 2015 18:50:21 GMT',
+72 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+72 verbose headers   'content-type': 'application/json',
+72 verbose headers   'cache-control': 'max-age=0',
+72 verbose headers   'content-length': '51',
+72 verbose headers   'accept-ranges': 'bytes',
+72 verbose headers   via: '1.1 varnish',
+72 verbose headers   age: '0',
+72 verbose headers   'x-served-by': 'cache-iad2146-IAD',
+72 verbose headers   'x-cache': 'MISS',
+72 verbose headers   'x-cache-hits': '0',
+72 verbose headers   'x-timer': 'S1429642220.997149,VS0,VE15',
+72 verbose headers   'keep-alive': 'timeout=10, max=50',
+72 verbose headers   connection: 'Keep-Alive' }
+73 silly registry.get cb [ 404,
+73 silly registry.get   { date: 'Tue, 21 Apr 2015 18:50:21 GMT',
+73 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+73 silly registry.get     'content-type': 'application/json',
+73 silly registry.get     'cache-control': 'max-age=0',
+73 silly registry.get     'content-length': '51',
+73 silly registry.get     'accept-ranges': 'bytes',
+73 silly registry.get     via: '1.1 varnish',
+73 silly registry.get     age: '0',
+73 silly registry.get     'x-served-by': 'cache-iad2146-IAD',
+73 silly registry.get     'x-cache': 'MISS',
+73 silly registry.get     'x-cache-hits': '0',
+73 silly registry.get     'x-timer': 'S1429642220.997149,VS0,VE15',
+73 silly registry.get     'keep-alive': 'timeout=10, max=50',
+73 silly registry.get     connection: 'Keep-Alive' } ]
+74 silly lockFile 1ba753d1-browserfy-9-0-3 browserfy@9.0.3
+75 silly lockFile 1ba753d1-browserfy-9-0-3 browserfy@9.0.3
+76 silly addNameRange number 2 { name: 'vinyl-transform', range: '*', hasData: true }
+77 silly addNameRange versions [ 'vinyl-transform', [ '0.0.0', '0.0.1', '1.0.0' ] ]
+78 verbose addNamed [ 'vinyl-transform', '1.0.0' ]
+79 verbose addNamed [ '1.0.0', '1.0.0' ]
+80 silly lockFile c19692ca-vinyl-transform-1-0-0 vinyl-transform@1.0.0
+81 verbose lock vinyl-transform@1.0.0 /Users/sgbpty-002/.npm/c19692ca-vinyl-transform-1-0-0.lock
+82 silly lockFile c19692ca-vinyl-transform-1-0-0 vinyl-transform@1.0.0
+83 silly lockFile c19692ca-vinyl-transform-1-0-0 vinyl-transform@1.0.0
+84 silly lockFile 654757e8-vinyl-transform vinyl-transform@
+85 silly lockFile 654757e8-vinyl-transform vinyl-transform@
+86 http 200 https://registry.npmjs.org/gulp
+87 silly registry.get cb [ 200,
+87 silly registry.get   { date: 'Tue, 21 Apr 2015 18:50:21 GMT',
+87 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+87 silly registry.get     etag: '"61P3N9YEZIGQBWG2EH8UM5Q4Y"',
+87 silly registry.get     'content-type': 'application/json',
+87 silly registry.get     'cache-control': 'max-age=60',
+87 silly registry.get     'content-length': '100965',
+87 silly registry.get     'accept-ranges': 'bytes',
+87 silly registry.get     via: '1.1 varnish',
+87 silly registry.get     age: '40',
+87 silly registry.get     'x-served-by': 'cache-iad2140-IAD',
+87 silly registry.get     'x-cache': 'HIT',
+87 silly registry.get     'x-cache-hits': '1',
+87 silly registry.get     'x-timer': 'S1429642221.025054,VS0,VE0',
+87 silly registry.get     vary: 'Accept',
+87 silly registry.get     'keep-alive': 'timeout=10, max=50',
+87 silly registry.get     connection: 'Keep-Alive' } ]
+88 silly addNameRange number 2 { name: 'gulp', range: '*', hasData: true }
+89 silly addNameRange versions [ 'gulp',
+89 silly addNameRange   [ '0.0.1',
+89 silly addNameRange     '0.0.2',
+89 silly addNameRange     '0.0.3',
+89 silly addNameRange     '0.0.4',
+89 silly addNameRange     '0.0.5',
+89 silly addNameRange     '0.0.7',
+89 silly addNameRange     '0.0.8',
+89 silly addNameRange     '0.0.9',
+89 silly addNameRange     '0.1.0',
+89 silly addNameRange     '0.2.0',
+89 silly addNameRange     '1.0.0',
+89 silly addNameRange     '1.1.0',
+89 silly addNameRange     '1.2.0',
+89 silly addNameRange     '1.2.1',
+89 silly addNameRange     '2.0.0',
+89 silly addNameRange     '2.0.1',
+89 silly addNameRange     '2.1.0',
+89 silly addNameRange     '2.2.0',
+89 silly addNameRange     '2.3.0',
+89 silly addNameRange     '2.4.0',
+89 silly addNameRange     '2.4.1',
+89 silly addNameRange     '2.6.0',
+89 silly addNameRange     '2.6.1',
+89 silly addNameRange     '2.7.0',
+89 silly addNameRange     '3.0.0',
+89 silly addNameRange     '3.1.1',
+89 silly addNameRange     '3.1.2',
+89 silly addNameRange     '3.1.3',
+89 silly addNameRange     '3.1.4',
+89 silly addNameRange     '3.2.0',
+89 silly addNameRange     '3.2.1',
+89 silly addNameRange     '3.2.2',
+89 silly addNameRange     '3.2.3',
+89 silly addNameRange     '3.2.4',
+89 silly addNameRange     '3.2.5',
+89 silly addNameRange     '3.3.0',
+89 silly addNameRange     '3.3.1',
+89 silly addNameRange     '3.3.2',
+89 silly addNameRange     '3.3.4',
+89 silly addNameRange     '3.4.0',
+89 silly addNameRange     '3.5.0',
+89 silly addNameRange     '3.5.1',
+89 silly addNameRange     '3.5.2',
+89 silly addNameRange     '3.5.5',
+89 silly addNameRange     '3.5.6',
+89 silly addNameRange     '3.6.0',
+89 silly addNameRange     '3.6.1',
+89 silly addNameRange     '3.6.2',
+89 silly addNameRange     '3.7.0',
+89 silly addNameRange     '3.8.0',
+89 silly addNameRange     '3.8.1',
+89 silly addNameRange     '3.8.2',
+89 silly addNameRange     '3.8.3',
+89 silly addNameRange     '3.8.4',
+89 silly addNameRange     '3.8.5',
+89 silly addNameRange     '3.8.6',
+89 silly addNameRange     '3.8.7',
+89 silly addNameRange     '3.8.8',
+89 silly addNameRange     '3.8.9',
+89 silly addNameRange     '3.8.10',
+89 silly addNameRange     '3.8.11' ] ]
+90 verbose addNamed [ 'gulp', '3.8.11' ]
+91 verbose addNamed [ '3.8.11', '3.8.11' ]
+92 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+93 verbose lock gulp@3.8.11 /Users/sgbpty-002/.npm/3d31ec08-gulp-3-8-11.lock
+94 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+95 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+96 silly lockFile 72f4391e-gulp gulp@
+97 silly lockFile 72f4391e-gulp gulp@
+98 error 404 404 Not Found: browserfy
+98 error 404
+98 error 404 'browserfy' is not in the npm registry.
+98 error 404 You should bug the author to publish it
+98 error 404 It was specified as a dependency of 'sgb-screen-group-list'
+98 error 404
+98 error 404 Note that you can also install from a
+98 error 404 tarball, folder, or http url, or git url.
+99 error System Darwin 14.1.0
+100 error command "node" "/usr/local/bin/npm" "install" "--save-dev" "gulp" "browserfy@9.0.3" "vinyl-transform"
+101 error cwd /Users/sgbpty-002/Proyectos/Web/megazord/sgb-screen-group-list
+102 error node -v v0.10.36
+103 error npm -v 1.4.28
+104 error code E404
+105 verbose exit [ 1, true ]
