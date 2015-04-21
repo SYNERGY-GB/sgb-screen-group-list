@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('sgb-screen-list', ['megazord'])
-  .controller('sgb-screen-list-controller', ['$stateParams', '$scope', function($stateParams, $scope){
+angular.module('sgb-screen-group-list', ['megazord'])
+  .controller('sgb-screen-group-list-controller', ['$stateParams', '$scope', function($stateParams, $scope){
     $scope.items = $stateParams.data;
 
     $scope.itemSearchHandler = function(){};
