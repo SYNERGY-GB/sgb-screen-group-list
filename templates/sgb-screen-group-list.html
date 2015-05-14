@@ -10,9 +10,8 @@
     </div>
     <div class="list opaque" >
       <div class="item item-divider" ng-repeat="section in sections">
-        <a mz-class="groupListView" screen-name="screenName" class="item item-icon-left">
+        <a mz-class="groupListView" class="item item-icon-left">
           <i class="icon ion-calendar"></i>
-            {{ screenName }}
           {{section.header}}
         </a>
         <a class="item item-avatar item-icon-right item-stable" ng-repeat="item in section.items" ng-click="itemClickHandler(item)">
