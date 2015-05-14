@@ -2,7 +2,7 @@
 'use strict';
 
 angular.module('sgb-screen-group-list', ['megazord'])
-    .controller('sgb-screen-group-list-controller', ['_router', '_screenParams','$stateParams', '$scope', 'lodash', function(_router, _screenParams, $stateParams, $scope, _){
+    .controller('sgb-screen-group-list-controller', ['_router', '_screenParams', '_screen','$stateParams', '$scope', 'lodash', function(_router, _screenParams, _screen, $stateParams, $scope, _){
 
         _screen.initialize($scope, _screenParams);
 
