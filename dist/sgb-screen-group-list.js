@@ -2,19 +2,11 @@
 'use strict';
 
 angular.module('sgb-screen-group-list', ['megazord'])
-<<<<<<< HEAD
     .controller('sgb-screen-group-list-controller', ['_router', '_screenParams','$stateParams', '$scope', 'lodash', function(_router, _screenParams, $stateParams, $scope, _){
+        _screen.initialize($scope, _screenParams);
+
         $scope.title = _screenParams.title || 'group_list_title';
         $scope.sections = $stateParams.data;
-=======
-  .controller('sgb-screen-group-list-controller', ['$stateParams', '_screenParams', '_screen', '$scope', function($stateParams, _screenParams, _screen, $scope){
-
-        _screen.init($scope, _screenParams);
-      $scope.title = _screenParams.title || 'group_list_title';
-      $scope.stylesheet = _screenParams.stylesheet
-      $scope.sections = $stateParams.data;
->>>>>>> eb8eb2b27c8a9e9db420b6bfaf71966f8d2bb3b4
-
         $scope.items = $scope.sections.items;
         $scope.searchQuery = "";
         $scope.filteredItems = $scope.items;

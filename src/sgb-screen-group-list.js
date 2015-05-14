@@ -2,11 +2,10 @@
 
 angular.module('sgb-screen-group-list', ['megazord'])
     .controller('sgb-screen-group-list-controller', ['_router', '_screenParams','$stateParams', '$scope', 'lodash', function(_router, _screenParams, $stateParams, $scope, _){
+        _screen.initialize($scope, _screenParams);
+
         $scope.title = _screenParams.title || 'group_list_title';
         $scope.sections = $stateParams.data;
-        _screen.init($scope, _screenParams);
-        $scope.stylesheet = _screenParams.stylesheet
-
         $scope.items = $scope.sections.items;
         $scope.searchQuery = "";
         $scope.filteredItems = $scope.items;
