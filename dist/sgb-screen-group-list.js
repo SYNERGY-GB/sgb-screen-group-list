@@ -7,6 +7,7 @@ angular.module('sgb-screen-group-list', ['megazord'])
         _screen.initialize($scope, _screenParams);
 
         $scope.sections = $stateParams.data;
+        $scope.totalFilteredSections = $scope.sections.length; 
         $scope.items = [];
         $scope.searchQuery = "";
         $scope.showSearch = typeof(_screenParams.showSearch) === 'undefined'? true : _screenParams.showSearch;
