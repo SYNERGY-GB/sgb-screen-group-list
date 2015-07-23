@@ -21,6 +21,8 @@ angular.module('sgb-screen-group-list', ['megazord'])
             });
         };
 
+        $scope.load();
+
         $scope.filterItems = function(searchQuery){
             $scope.totalFilteredSections = $scope.sections.length; 
             angular.forEach($scope.sections, function (section) {
