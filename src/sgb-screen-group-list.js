@@ -54,4 +54,12 @@ angular.module('sgb-screen-group-list', ['megazord'])
             })
         };
 
-    }]);
+    }])
+
+
+    .directive('someDirective', function() {
+        return {
+            restrict: 'EA',
+            template: '<div>some stuff here<div>'
+        };
+    });
