@@ -10,9 +10,8 @@
                 <i class="icon ion-close-circled searchCancelButton"></i>
             </button>
         </div>
-
         <div class="groupListView">
-            <div class="list card opaque groupListViewCard" ng-repeat="section in sections">
+            <div class="list card opaque groupListViewCard" ng-repeat="section in sections" ng-show="section.filteredItems.length">
                 <a mz-class="groupListView" class="item groupListViewHeader">
                     <div class="row row-center">
                         <img class="col" ng-src="resources/calendar_icon.png">
@@ -20,14 +19,20 @@
                         <h2 class="col col-75">{{section.header}}</h2>
                     </div>
                 </a>
-                <a class="item item-thumbnail-left item-icon-right item-stable listBackground" ng-repeat="item in section.items" ng-click="itemClickHandler(item)">
+                <a class="item item-thumbnail-left item-icon-right item-stable listBackground" ng-repeat="item in section.filteredItems" ng-click="itemClickHandler(item)">
                     <img src="{{ item.image }}">
                     <h2>{{ item.title }}</h2>
-                    <p class="detail1" ng-show="item.detail1">{{ item.detail1 }}</p>
-                    <p class="detail2" ng-show="item.detail2">{{ item.detail2 }}</p>
+                    <p ng-show="item.detail_1">{{ item.detail_1 }}</p>
+                    <p ng-show="item.detail_2">{{ item.detail_2 }}</p>
                     <i class="icon ion-chevron-right"></i>
                 </a>
             </div>
         </div>
+        <div class="card" ng-show="!totalFilteredSections">
+            <div class="item item-text-wrap">
+                {{'empty_search' | translate }}
+            </div>
+        </div>
+       
     </ion-content>
 </ion-view>

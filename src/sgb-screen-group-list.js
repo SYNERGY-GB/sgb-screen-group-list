@@ -6,24 +6,35 @@ angular.module('sgb-screen-group-list', ['megazord'])
         _screen.initialize($scope, _screenParams);
 
         $scope.sections = $stateParams.data;
-        $scope.items = $scope.sections.items;
+        $scope.items = [];
         $scope.searchQuery = "";
-        $scope.filteredItems = $scope.items;
         $scope.showSearch = typeof(_screenParams.showSearch) === 'undefined'? true : _screenParams.showSearch;
 
         $scope.itemSearchHandler = function(){};
 
         $scope.itemSearchCancelHandler = function(){};
 
-        $scope.filterItems = function(searchQuery){
-            var search = searchQuery.toLowerCase();
-            $scope.filteredItems = _.filter($scope.items, function(item){
-                return (item.title && item.title.toLowerCase().indexOf(search) != -1) ||
-                    (item.detail1 && item.detail1.toLowerCase().indexOf(search) != -1) ||
-                    (item.detail2 && item.detail2.toLowerCase().indexOf(search) != -1) ||
-                    (item.url && item.url.toLowerCase().indexOf(search) != -1);
+        $scope.load = function () { 
+            angular.forEach($scope.sections, function (section) {
+                section.filteredItems = section.items;
             });
         };
+
+        $scope.filterItems = function(searchQuery){
+            $scope.totalFilteredSections = 0; 
+            angular.forEach($scope.sections, function (section) {
+                var search = searchQuery.toLowerCase();
+                section.filteredItems = _.filter(section.items, function(item){
+                    return (item.title && item.title.toLowerCase().indexOf(search) != -1) ||
+                        (item.detail_1 && item.detail_1.toLowerCase().indexOf(search) != -1) ||
+                        (item.detail_2 && item.detail_2.toLowerCase().indexOf(search) != -1) ||
+                        (item.url && item.url.toLowerCase().indexOf(search) != -1) ||
+                        (item.desc && item.desc.toLowerCase().indexOf(search) != -1);
+                });
+                if (section.filteredItems.length) $scope.totalFilteredSections ++; 
+            });
+         };
+
 
         $scope.cancelSearch = function(){
             $scope.searchQuery = "";
