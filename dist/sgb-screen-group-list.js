@@ -22,7 +22,7 @@ angular.module('sgb-screen-group-list', ['megazord'])
         };
 
         $scope.filterItems = function(searchQuery){
-            $scope.totalFilteredSections = 0; 
+            $scope.totalFilteredSections = $scope.sections.length; 
             angular.forEach($scope.sections, function (section) {
                 var search = searchQuery.toLowerCase();
                 section.filteredItems = _.filter(section.items, function(item){
@@ -32,7 +32,7 @@ angular.module('sgb-screen-group-list', ['megazord'])
                         (item.url && item.url.toLowerCase().indexOf(search) != -1) ||
                         (item.desc && item.desc.toLowerCase().indexOf(search) != -1);
                 });
-                if (section.filteredItems.length) $scope.totalFilteredSections ++; 
+                if (!section.filteredItems.length) $scope.totalFilteredSections --; 
             });
          };
 
