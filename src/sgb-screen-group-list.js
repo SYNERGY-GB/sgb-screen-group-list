@@ -54,4 +54,15 @@ angular.module('sgb-screen-group-list', ['megazord'])
             })
         };
 
-    }]);
+    }])
+
+    .directive('mzTemplate', function() {
+        return {
+            restrict: 'EA',
+            replace: true, 
+            templateUrl: function (tElement, tAttrs) {
+                 //console.log('directive_templates/group-list-'+(scope.priority?'news':'regular')+'.html');
+                 return 'directive_templates/group-list-news.html'; 
+            }
+        }; 
+    });

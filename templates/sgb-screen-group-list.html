@@ -9,29 +9,19 @@
                 <i class="icon ion-close-circled searchCancelButton"></i>
             </button>
         </div>
-        <div class="groupListView">
-            <div class="list card opaque groupListViewCard" ng-repeat="section in sections" ng-show="section.filteredItems.length">
-                <a mz-class="groupListView" class="item groupListViewHeader">
-                    <div class="row row-center">
-                        <img class="col" ng-src="resources/calendar_icon.png">
-                        <!--<i class="icon ion-calendar"></i>-->
-                        <h2 class="col col-75">{{section.header}}</h2>
-                    </div>
-                </a>
-                <a class="item item-thumbnail-left item-icon-right item-stable listBackground" ng-repeat="item in section.filteredItems" ng-click="itemClickHandler(item)">
-                    <img src="{{ item.image }}">
-                    <h2>{{ item.title }}</h2>
-                    <p ng-show="item.detail_1">{{ item.detail_1 }}</p>
-                    <p ng-show="item.detail_2">{{ item.detail_2 }}</p>
-                    <i class="icon ion-chevron-right"></i>
-                </a>
+
+        <div class="list card opaque groupListViewCard"  ng-repeat="section in sections"
+             ng-show="section.filteredItems.length"> 
+
+            <div class="row row-center item item-divider item-text-wrap"> 
+                <img class="col col-25" ng-src="resources/calendar_icon.png"> 
+                <p class="col col-75">{{section.header}} </p> 
+            </div> 
+
+            <div ng-repeat="item in section.filteredItems" ng-click="itemClickHandler(item)"> 
+                <mz-template view="{{item.priority}}"></mz-template>
             </div>
+
         </div>
-        <div class="card" ng-show="!totalFilteredSections">
-            <div class="item item-text-wrap">
-                {{'empty_search' | translate }}
-            </div>
-        </div>
-       
     </ion-content>
 </ion-view>
