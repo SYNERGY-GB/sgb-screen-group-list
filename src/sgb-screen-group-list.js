@@ -59,14 +59,14 @@ angular.module('sgb-screen-group-list', ['megazord'])
     .directive('mzTemplate', function() {
         return {
             restrict: 'EA',
-            transclude: true,
             scope: {
                 user: '=data'
             },
             template: '<ng-include src="getTemplateUrl()"/>',
             controller: function($scope) {
+                $scope.options = ['regular','news']; 
                 $scope.getTemplateUrl = function() {
-                    return 'directive_templates/group-list-'+$scope.user.priority+'.html';
+                    return 'directive_templates/group-list-'+$scope.options[$scope.user.option]+'.html';
                 }
             }
         }; 

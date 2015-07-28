@@ -1,7 +1,7 @@
 <div class="item item-body"> 
-        <h2 ng-show="item.title">{{ item.title }}</h2> 
-        <p  ng-show="item.detail_1">{{ item.detail_1 }}</p> 
-        <p  ng-show="item.detail_2">{{ item.detail_2 }}</p> 
-        <p  ng-show="item.date">{{ item.date }}</p> 
-        <img class="full-image" ng-src="{{item.image}}">
+    <h2 ng-show="user.title">{{ user.title }}</h2> 
+    <p  ng-show="user.detail_1">{{ user.detail_1 }}</p> 
+    <p  ng-show="user.detail_2">{{ user.detail_2 }}</p> 
+    <p  ng-show="user.date">{{ user.date | date : format : short }}</p> 
+    <img ng-show="user.image" class="full-image" ng-src="{{user.image}}">
 </div>

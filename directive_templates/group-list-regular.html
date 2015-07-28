@@ -1,7 +1,8 @@
 <div class="item item-thumbnail-left item-icon-right item-stable listBackground">
-    <img src="{{ item.image }}"> 
-    <h2>{{ item.title }}</h2> 
-    <p ng-show="item.detail_1">{{ item.detail_1 }}</p> 
-    <p ng-show="item.detail_2">{{ item.detail_2 }}</p> 
+    <img ng-show="user.image" ng-src="{{ user.image }}"> 
+    <h2 ng-show="user.title">{{ user.title }}</h2> 
+    <p ng-show="user.detail_1">{{ user.detail_1 }}</p> 
+    <p ng-show="user.detail_2">{{ user.detail_2 }}</p> 
+    <p  ng-show="user.date">{{ user.date | date : format : short }}</p> 
     <i class="icon ion-chevron-right"></i> 
 </div>    
