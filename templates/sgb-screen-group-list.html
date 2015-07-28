@@ -18,10 +18,16 @@
                 <p class="col col-75">{{section.header}} </p> 
             </div> 
 
-            <div ng-repeat="item in section.filteredItems" ng-click="itemClickHandler(item)"> 
-                <mz-template view="{{item.priority}}"></mz-template>
-            </div>
-
+            <mz-template data="item" ng-repeat="item in section.filteredItems" ng-click="itemClickHandler(item)"
+                class="item-text-wrap"> 
+            </mz-template>
+           
         </div>
+        <div class="card" ng-show="!totalFilteredSections">
+            <div class="item item-text-wrap">
+                {{'empty_search' | translate }}
+            </div>
+        </div>
+        
     </ion-content>
 </ion-view>
