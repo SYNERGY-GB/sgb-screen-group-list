@@ -1,0 +1,7 @@
+<div class="item item-thumbnail-right item-stable listBackground">
+    <img ng-show="user.image" src="{{ user.image }}"> 
+    <h2 ng-show="user.title">{{ user.title }}</h2> 
+    <p ng-show="user.detail_1">{{ user.detail_1 }}</p> 
+    <p ng-show="user.detail_2">{{ user.detail_2 }}</p> 
+    <p ng-show="user.date">{{ user.date | date : format : short }}</p> 
+</div>    

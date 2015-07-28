@@ -65,7 +65,7 @@ angular.module('sgb-screen-group-list', ['megazord'])
             },
             template: '<ng-include src="getTemplateUrl()"/>',
             controller: function($scope) {
-                $scope.options = ['regular','news']; 
+                $scope.options = ['large','compact-right','compact-right']; 
                 $scope.getTemplateUrl = function() {
                     return 'directive_templates/group-list-'+$scope.options[$scope.user.option]+'.html';
                 }
