@@ -60,13 +60,17 @@ angular.module('sgb-screen-group-list', ['megazord'])
         return {
             restrict: 'EA',
             scope: {
-                user: '=data'
+                user: '=data',
+                func: '=templateFunc',
+                showicon: '=iconFunc'
+                
             },
             template: '<ng-include src="getTemplateUrl()"/>',
             controller: function($scope) {
                 $scope.options = ['large','compact-left','compact-right']; 
                 $scope.getTemplateUrl = function() {
-                    return 'directive_templates/group-list-'+$scope.options[$scope.user.option]+'.html';
+                    return 'directive_templates/group-list-'+
+                           ($scope.func?$scope.options[$scope.func($scope.user)]:$scope.options[1])+'.html';
                 }
             }
         }; 

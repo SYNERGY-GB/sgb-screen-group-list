@@ -1,8 +1,9 @@
-<div class="item item-thumbnail-left item-icon-right item-stable listBackground">
+<div class="item item-thumbnail-left item-stable listBackground"
+     ng-class="{ 'item-icon-right': showicon(user)}">
     <img ng-show="user.image" ng-src="{{ user.image }}"> 
     <h2 ng-show="user.title">{{ user.title }}</h2> 
     <p ng-show="user.detail_1">{{ user.detail_1 }}</p> 
     <p ng-show="user.detail_2">{{ user.detail_2 }}</p> 
     <p  ng-show="user.date">{{ user.date | date : format : short }}</p> 
-    <i class="icon ion-chevron-right"></i> 
+    <i ng-show ="showicon(user)" class="icon ion-chevron-right"></i> 
 </div>

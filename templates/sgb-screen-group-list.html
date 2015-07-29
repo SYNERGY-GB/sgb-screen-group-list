@@ -3,7 +3,8 @@
         <div class="searchBarView card item-input-inset" ng-show="showSearch">
             <label class="searchField item-input-wrapper">
                 <i class="icon ion-ios-search placeholder-icon"></i>
-                <input type="search" placeholder="{{ 'list_search' | translate }}" ng-model="searchQuery" ng-change="filterItems(searchQuery)">
+                <input type="search" placeholder="{{ 'list_search' | translate }}" ng-model="searchQuery" 
+                       ng-change="filterItems(searchQuery)">
             </label>
             <button class="button button-clear " ng-click="cancelSearch()">
                 <i class="icon ion-close-circled searchCancelButton"></i>
@@ -18,7 +19,8 @@
                 <p class="col col-75">{{section.header}} </p> 
             </div> 
 
-            <mz-template data="item" ng-repeat="item in section.filteredItems" ng-click="itemClickHandler(item)"
+            <mz-template data="item" template-func="templateFunc" icon-func="iconFunc" 
+                ng-repeat="item in section.filteredItems" ng-click="itemClickHandler(item)"
                 class="item-text-wrap"> 
             </mz-template>
            
