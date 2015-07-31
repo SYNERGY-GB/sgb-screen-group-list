@@ -62,7 +62,7 @@ angular.module('sgb-screen-group-list', ['megazord'])
         return {
             restrict: 'EA',
             scope: {
-                user: '=data',
+                data: '=data',
                 func: '=templateFunc',
                 showicon: '=iconFunc'
                 
