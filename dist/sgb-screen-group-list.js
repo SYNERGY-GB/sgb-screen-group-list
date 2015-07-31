@@ -73,7 +73,7 @@ angular.module('sgb-screen-group-list', ['megazord'])
                 $scope.options = ['large','compact-left','compact-right']; 
                 $scope.getTemplateUrl = function() {
                     return 'directive_templates/group-list-'+
-                           ($scope.func?$scope.options[$scope.func($scope.user)]:$scope.options[1])+'.html';
+                           ($scope.func?$scope.options[$scope.func($scope.data)]:$scope.options[1])+'.html';
                 }
             }
         }; 
