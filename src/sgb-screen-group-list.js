@@ -7,8 +7,9 @@ angular.module('sgb-screen-group-list', ['megazord'])
 
         $scope.sections = $stateParams.data;
         $scope.totalFilteredSections = $scope.sections.length; 
-        $scope.items = [];
-        $scope.searchQuery = "";
+        $scope.searchQuery = {
+            value: ''
+        };
         $scope.showSearch = typeof(_screenParams.showSearch) === 'undefined'? true : _screenParams.showSearch;
         $scope.templateFunc = _screenParams.templateFunc; 
         $scope.iconFunc = _screenParams.iconFunc; 
@@ -41,9 +42,10 @@ angular.module('sgb-screen-group-list', ['megazord'])
          };
 
 
+
         $scope.cancelSearch = function(){
-            $scope.searchQuery = "";
-            $scope.filteredItems = $scope.items;
+            $scope.searchQuery.value = ''; 
+            $scope.load(); 
         };
 
         $scope.itemClickHandler = function(item){
