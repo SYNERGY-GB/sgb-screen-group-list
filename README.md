@@ -54,7 +54,7 @@ Opción 1
 
 ![Alt Text](https://s3.amazonaws.com/megazord-framework/balsamiq+mockups/sgb-screen-group-list-option-1.png)
 
-Para esta vista existe la posibilidad de incluir un ićono a la derecha del texto.  Para lograr esto se debe proveer un parámetro (\textit{showIcon}) en la pantalla que indique que ícono de ionic se va a desplegar, por ejemplo \textit{icon ion-chevron-right}.  En caso de no proveer dicho parámetro no se mostrará ningún ícono
+Para esta vista existe la posibilidad de incluir un ićono a la derecha del texto.  Para lograr esto se debe proveer un parámetro (showIcon) en la pantalla que indique que ícono de ionic se va a desplegar, por ejemplo icon ion-chevron-right.  En caso de no proveer dicho parámetro no se mostrará ningún ícono
 
 Opción 2
 
