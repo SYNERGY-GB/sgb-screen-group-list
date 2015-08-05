@@ -11,8 +11,8 @@ Se debe recibir una lista de secciones (sections) donde obligatoriamente todas l
 Datos obligatorios
 
 
-header: encabezado de la sección <br/>
-items: lista de ítems donde cada ítem debe tener: <br/>
+- header: encabezado de la sección 
+- items: lista de ítems donde cada ítem debe tener: 
 
     	1. id: id del ítem
     	2. title: título del ítem
@@ -22,12 +22,12 @@ Datos opcionales
 Cada ítem puede tener los siguientes campos opcionales
 
 
-image: enlace a una imágen correspondiente al ítem<br/>
-detail\_1: subtitulo con información del ítem<br/>
-detail\_2: subtitulo con información del ítem<br/>
-date: fecha de interés <br/>
-desc: descripcion extensa del ítem<br/>
-url: enlace a más información o detalles<br/>
+- image: enlace a una imágen correspondiente al ítem
+- detail\_1: subtitulo con información del ítem
+- detail\_2: subtitulo con información del ítem
+- date: fecha de interés 
+- desc: descripcion extensa del ítem
+- url: enlace a más información o detalles
 
 
 Adicionalmente para cada ítem, se puede proveer una lista de máximo tres recursos para indicar si el item tiene otros enlaces (por ejemplo alguna persona que tenga perfil en Linkedin, Twitter y Facebook. Cada recurso será un pequeño ícono con el enlace correspondiente. Estos recursos se identifican por resources, cada resource es un registro que tiene dos campos. El primer campo se identifica por url, que es el enlace a donde se direcciona al hacer click en cada imágen. El segundo campo es src, que es donde se encuentra la imágen (en el proyecto o dirección remota).  Estos recursos se podrán visualizar unícamente en la vista detallada del ítem
