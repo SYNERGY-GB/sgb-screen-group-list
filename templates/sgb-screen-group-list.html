@@ -15,13 +15,12 @@
              ng-show="section.filteredItems.length"> 
 
             <div class="row row-center item item-divider item-text-wrap"> 
-                <img class="col col-25" ng-src="resources/calendar_icon.png"> 
+                <img class="col col-25" ng-src="{{sectionImage}}"> 
                 <p class="col col-75">{{section.header}} </p> 
             </div> 
 
-            <mz-template data="item" template-func="templateFunc" icon="showIcon" 
-                ng-repeat="item in section.filteredItems" ng-click="itemClickHandler(item)"
-                class="item-text-wrap"> 
+            <mz-template ng-repeat="item in section.filteredItems" bind-to="{{item}}" 
+                template-type="templateType" ng-click="itemClickHandler(item)" class="item-text-wrap"> 
             </mz-template>
            
         </div>

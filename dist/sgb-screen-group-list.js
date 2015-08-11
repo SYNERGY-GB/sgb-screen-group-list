@@ -2,18 +2,27 @@
 'use strict';
 
 angular.module('sgb-screen-group-list', ['megazord'])
-    .controller('sgb-screen-group-list-controller', ['_router', '_screenParams', '_screen','$stateParams', '$scope', 'lodash', function(_router, _screenParams, _screen, $stateParams, $scope, _){
+    .controller('sgb-screen-group-list-controller', ['_router', '_screenParams', '_screen','$stateParams', '$scope', 'lodash',
+                 function(_router, _screenParams, _screen, $stateParams, $scope, _){
 
         _screen.initialize($scope, _screenParams);
 
         $scope.sections = $stateParams.data;
         $scope.totalFilteredSections = $scope.sections.length; 
+        $scope.showSearch = typeof(_screenParams.showSearch) === 'undefined'? true : _screenParams.showSearch;
+        $scope.templateType = _screenParams.templateType;
+        $scope.showIcon = _screenParams.showIcon;  
+        $scope.sectionImage = _screenParams.sectionImage;
+
+        //hard wired test, remove after test
+        $scope.sectionImage= "www/sgb-screen-group-list/templates/calendar_icon.png";
+
+        //Delete when sdk has screenType
+        $scope.screenType = "sgb-screen-group-list";
+        
         $scope.searchQuery = {
             value: ''
         };
-        $scope.showSearch = typeof(_screenParams.showSearch) === 'undefined'? true : _screenParams.showSearch;
-        $scope.templateFunc = _screenParams.templateFunc; 
-        $scope.showIcon = _screenParams.showIcon;  
 
         $scope.itemSearchHandler = function(){};
 
@@ -57,25 +66,6 @@ angular.module('sgb-screen-group-list', ['megazord'])
             })
         };
 
-    }])
+    }]);
 
-    .directive('mzTemplate', function() {
-        return {
-            restrict: 'EA',
-            scope: {
-                data: '=data',
-                func: '=templateFunc',
-                showicon: '=icon'
-                
-            },
-            template: '<ng-include src="getTemplateUrl()"/>',
-            controller: function($scope) {
-                $scope.options = ['large','compact-left','compact-right']; 
-                $scope.getTemplateUrl = function() {
-                    return 'directive_templates/group-list-'+
-                           ($scope.func?$scope.options[$scope.func($scope.data)]:$scope.options[1])+'.html';
-                }
-            }
-        }; 
-    });
 },{}]},{},[1]);
