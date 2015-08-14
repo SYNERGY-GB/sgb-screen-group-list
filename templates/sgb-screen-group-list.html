@@ -19,8 +19,9 @@
                 <p class="col col-75">{{section.header}} </p> 
             </div> 
 
-            <mz-template ng-repeat="item in section.filteredItems" bind-to="{{item}}" 
-                template-type="templateType" ng-click="itemClickHandler(item)" class="item-text-wrap"> 
+            <mz-template class="item-text-wrap" ng-repeat="item in section.filteredItems" 
+                bind-to="item" template-type="_screenParams.templateType" screen-params="_screenParams" 
+                ng-click="itemClickHandler(item)" > 
             </mz-template>
            
         </div>

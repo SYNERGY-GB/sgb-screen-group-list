@@ -10,16 +10,7 @@ angular.module('sgb-screen-group-list', ['megazord'])
         $scope.sections = $stateParams.data;
         $scope.totalFilteredSections = $scope.sections.length; 
         $scope.showSearch = typeof(_screenParams.showSearch) === 'undefined'? true : _screenParams.showSearch;
-        $scope.templateType = _screenParams.templateType;
-        $scope.showIcon = _screenParams.showIcon;  
-        $scope.sectionImage = _screenParams.sectionImage;
 
-        //hard wired test, remove after test
-        $scope.sectionImage= "www/sgb-screen-group-list/templates/calendar_icon.png";
-
-        //Delete when sdk has screenType
-        $scope.screenType = "sgb-screen-group-list";
-        
         $scope.searchQuery = {
             value: ''
         };
