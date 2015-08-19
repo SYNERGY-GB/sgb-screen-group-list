@@ -32,7 +32,38 @@ Adicionalmente para cada ítem, se puede proveer una lista de máximo tres recur
 
 <h3>Ejemplo JSON</h3>
 
-![Alt Text](https://s3.amazonaws.com/megazord-framework/json+screenshots/json-group-list.png)
+	[ 
+	    { 
+	    "header": "Fecha -Lugar", 
+	    "items": [ 
+	             { 
+		             "id": 1, 
+		             "title": "<titulo_1>", 
+		             "detail_1": "<subtitulo_1>", 
+		             "detail_2": "<subtitulo_2>", 
+		             "desc": "<descripcion>", 
+		             "url": "<enlace>",
+		             "image": "<url de la imagen>",
+		             "option" : 1,
+		             "date" : "2012-04-23T18:25:43.511Z",
+		             "resources" : [
+			             {"url" : "www.google.com",  "src" : "../resources/telephone_icon.png"},
+			             {"url" : "www.google.com", "src" : "../resources/email_icon.png"},
+			             {"url" : "www.google.com", "src" : "../resources/linkedin_icon.png"}
+		             ]
+	             },
+	             { 
+		             "id": 2, "title": "<titulo_1>", 
+		             "detail_1": "<subtitulo_1>", 
+		             "detail_2": "<subtitulo_2>", 
+		             "desc": "<descripcion>",
+		             "url": "<enlace>",
+		             "image": "<enlace a la imagen>",
+		             "option" : 0
+	             }
+	             ]
+	    }
+	] 
 
 <h3>Parámetros de la pantalla</h3>
 
