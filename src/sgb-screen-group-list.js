@@ -14,10 +14,6 @@ angular.module('sgb-screen-group-list', ['megazord'])
             value: ''
         };
 
-        $scope.itemSearchHandler = function(){};
-
-        $scope.itemSearchCancelHandler = function(){};
-
         $scope.load = function () { 
             angular.forEach($scope.sections, function (section) {
                 section.filteredItems = section.items;
