@@ -50,7 +50,7 @@ Actualmente se cuentan con las siguientes opciones
 
 <h4>Opción @news</h4>
 
-![Alt Text](https://s3.amazonaws.com/megazord-framework/balsamiq+mockups/sgb-screen-group-news.png)
+![Alt Text](https://s3.amazonaws.com/megazord-framework/balsamiq+mockups/sgb-screen-group-list-news.png)
 
 <h4>Opción @compact-left</h4>
 
@@ -62,4 +62,4 @@ Para esta vista existe la posibilidad de incluir un ićono a la derecha del text
 
 ![Alt Text](https://s3.amazonaws.com/megazord-framework/balsamiq+mockups/sgb-screen-group-list-compact-right.png)
 
-En caso de no recibir una función, los elementos se mostrarán según la opcion 1. 
+En caso de no recibir una función, los elementos se mostrarán según la opcion @compact-left. 
