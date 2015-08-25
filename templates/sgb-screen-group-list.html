@@ -11,11 +11,11 @@
             </button>
         </div>
 
-        <div class="list card opaque groupListViewCard"  ng-repeat="section in sections"
+        <div class="list opaque"  ng-repeat="section in sections"
              ng-show="section.filteredItems.length"> 
 
-            <div class="row row-center item item-divider item-text-wrap"> 
-                <img class="col col-25" ng-src="{{sectionImage}}"> 
+            <div class="row row-center text-center item item-divider item-text-wrap"> 
+                <img class="col col-25" ng-src="{{section.image}}"> 
                 <p class="col col-75">{{section.header}} </p> 
             </div> 
 

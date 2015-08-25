@@ -10,7 +10,7 @@ Se debe recibir una lista de secciones (sections) donde obligatoriamente todas l
 
 <h3>Datos obligatorios</h3>
 
-
+- **image** : Imágen de la sección
 - **header**: encabezado de la sección 
 - **items**: lista de ítems donde cada ítem debe tener: 
 
@@ -34,6 +34,7 @@ Adicionalmente para cada ítem, se puede proveer una lista de máximo tres recur
 
 	[ 
 	    { 
+	    "image" : "sec1-image"
 	    "header": "Fecha -Lugar", 
 	    "items": [ 
 	             { 
