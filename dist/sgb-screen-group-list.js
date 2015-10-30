@@ -2,12 +2,12 @@
 'use strict';
 
 angular.module('sgb-screen-group-list', ['megazord'])
-    .controller('sgb-screen-group-list-controller', ['_router', '_screenParams', '_screen','$stateParams', '$scope', 'lodash',
-                 function(_router, _screenParams, _screen, $stateParams, $scope, _){
+    .controller('sgb-screen-group-list-controller', ['_router', '_screenParams', '_screen','_data', '$scope', 'lodash',
+                 function(_router, _screenParams, _screen, _data, $scope, _){
 
         _screen.initialize($scope, _screenParams);
 
-        $scope.sections = $stateParams.data;
+        $scope.sections = _data;
         $scope.totalFilteredSections = $scope.sections.length; 
         $scope.showSearch = typeof(_screenParams.showSearch) === 'undefined'? true : _screenParams.showSearch;
 
